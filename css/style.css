@@ -15,7 +15,7 @@ a:link, a:visited, a:active, a:hover { text-decoration: none }
 .ct { margin: 0 auto }
 .ofh { overflow: hidden }
 /*main*/
-#main { width: 1000px; height: 1500px; margin: 50px auto; }
+#main { width: 1000px; height: 2200px; margin: 50px auto; }
 /*logo和搜索框*/
 #logo { width: 550px; height: 100px; }
 #logo img { margin-top: 25px; }
@@ -30,4 +30,60 @@ a:link, a:visited, a:active, a:hover { text-decoration: none }
 #navigation li a:hover { color : #e53723; }
 /*幻灯片和新闻列表*/
 #slide_news { height: 225px; width : 1000px; margin-top: 20px; }
-#slide_container { height: 225px; width : 372px; background-color: #ff4e00; }
+#slide_container { height: 225px; width : 372px; background-color: #ff4e00; overflow: hidden; }
+.slide { width: 288px; height: 190px; padding: 29px 42px 28px; }
+.slide ul li { display: block; width: 288px; height: 190px; position: relative; overflow: hidden; }
+.slide ul li .slide_txt { width: 288px; height: 20px; position: absolute; overflow: hidden; bottom: 0px; color: #FFF; line-height: 20px; text-align: center; font-size: 16px; overflow: hidden; }
+.slide .jcarousel-next-horizontal, .slide .jcarousel-prev-horizontal { position: absolute; bottom: 15px; width: 42px; height: 75px; cursor: pointer; z-index: 3 }
+.slide .jcarousel-prev-horizontal { background: url(../img/btn_slideshow.png); left: -42px; bottom: 65px; }
+.slide .jcarousel-next-horizontal { background: url(../img/btn_slideshow.png) -42px 0; right: -42px; bottom: 65px; }
+.slide .jcarousel-next-horizontal:hover, .slide .jcarousel-next-horizontal:focus { background-position: -42px -75px }
+.slide .jcarousel-prev-horizontal:hover, .slide .jcarousel-prev-horizontal:focus { background-position: 0 -75px }
+.slide .jcarousel-container-horizontal, .slide .jcarousel-clip-horizontal, .slide .jcarousel-item { width: 288px; height: 190px }
+.slide .jcarousel-clip { overflow: hidden }
+.slide .jcarousel-item-horizontal { position: relative }
+#news { height: 225px; width : 602px; }
+#news ul { margin-top: -5px; padding-left: 8px; }
+#news ul li { border-bottom: 1px dashed #bbbbbb; height: 27px; vertical-align: bottom; }
+#news ul li a { color: #454545; font-size: 14px; width: 500px; line-height: 27px; height: 27px; overflow: hidden; display: block; float: left }
+#news ul li a:hover { color: #ff4e00; }
+#news ul li span { float: right; line-height: 27px; color: #bbbbbb; font-size: 14px; }
+/*东盟*/
+#asean { height: 150px; width : 1000px; margin-top: 20px; border-top: 1px solid #eeeeee; }
+#asean_top { height: 50px; width : 1000px; }
+#asean_top .more { color: #ff4e00; line-height: 50px; margin-right: 15px; }
+#asean_top .more:hover { color: #ef8222; }
+#asean_news { height: 75px; width: 1000px; overflow: hidden; }
+#asean ul { height: 100px; width: 1000px; overflow: hidden; margin-top: -8px; }
+#asean ul li { height: 30px; vertical-align: bottom; float: left; width: 500px; background: url('../img/li.gif') no-repeat scroll left center transparent; }
+#asean ul li a { color: #6f6f6f; font-size: 14px; width: 500px; line-height: 30px; height: 30px; overflow: hidden; display: block; text-indent: 1em; }
+#asean ul li a:hover { color: #ff4e00; }
+/*国家*/
+#countries { height: 1100px; width: 1000px; border-top: 1px solid #eeeeee; }
+.country { height: 188px; width: 500px; margin-top: 30px; background-color: #efefef; }
+.country_pic { position: relative; height: 188px; width: 95px; }
+.country_pic span { display: block; width: 95px; height: 50px; position: absolute; left: 0px; bottom: 0px; background: none repeat scroll 0% 0% #2f279b; filter: alpha(opacity=90); opacity: 0.9; }
+.country_pic_txt { position: absolute; right: 5px; bottom: 2px; color: #FFF; font-weight: bold; }
+.country_pic_txt h1 { font-size: 20px; font-weight: bold; text-align: right; }
+.country_pic_txt p { text-align: right; }
+.country ul { height: 188px; width: 395px; margin: 5px 0 0 10px; }
+.country ul li { height: 30px; width: 395px; overflow: hidden; }
+.country ul li a { color: #000; font-size: 14px; width: 395px; line-height: 30px; height: 30px; overflow: hidden; display: block; }
+.country ul li a:hover { color: #ff4e00; }
+#indonesia h1 { font-size: 16px; }
+/*缤纷图集*/
+#pictures { width: 1000px; height: 330px; margin-top: 20px; }
+#pictures_top { background-color: #333333; width: 1000px; height: 40px; }
+#pictures_top .more { color: #fff; line-height: 40px; margin-right: 15px; }
+#pictures_top .more:hover { color: #ef8222; }
+#pictures_content { width : 1000px; height : 278px; margin-top: 10px; }
+#pictures_left { width : 500px; height : 278px; position: relative; }
+.content_shadow { display: block; height: 40px; background: url('../img/png24bg2.png') repeat scroll 0% 0% transparent; position: absolute; bottom: 0px; left: 0px; width: 100% }
+#pictures_left span { display: block; width: 470px; height: 25px; position: absolute; left: 15px; bottom: 10px; line-height: 25px; font-size: 18px; overflow: hidden; color: #FFF; }
+#pictures_right { float: right; width : 490px; height : 277px; overflow: hidden; }
+#pictures_right ul { width : 500px; height : 299px; }
+#pictures_right ul li { float: left; width : 240px; height : 133px; overflow: hidden; margin: 0 10px 11px 0; position: relative; }
+#pictures_right ul li span { display: block; width: 230px; height: 25px; position: absolute; left: 5px; bottom: 5px; line-height: 25px; font-size: 14px; overflow: hidden; color: #FFF; }
+/*foot*/
+#foot { height: 175px; text-align: center; color: #5c5c5c; line-height: 20px; padding-top: 40px; border-top: 1px solid #E0E0E0; }
+#foot a { color: #5c5c5c; }
